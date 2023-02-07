@@ -1,0 +1,10 @@
+.border-box {
+    border: 1px;
+    border-style: solid;
+    border-color: black
+}
+
+.background{
+    background-color: rgb(153, 218, 162);
+    opacity: 100%;
+}

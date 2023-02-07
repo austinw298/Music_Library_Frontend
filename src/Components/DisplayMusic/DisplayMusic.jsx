@@ -1,3 +1,5 @@
+
+
 const DisplayMusic = ({props}) => {
     const table = props.map((song) => {
       return  <tr>
@@ -9,8 +11,8 @@ const DisplayMusic = ({props}) => {
         </tr>
     })
     return ( 
-        <div>
-            <table>
+        <div className="">
+            <table className="table table-bordered">
                 <thead>
                     <tr>
                         <th>Title</th>

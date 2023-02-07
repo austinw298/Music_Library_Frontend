@@ -3,7 +3,7 @@ import React, {useState} from "react";
 
 const AddSong = (props) => {
 
-    const [title, setTitle] = useState(0);
+    const [title, setTitle] = useState('');
     const [artist, setArtist] = useState('')
     const [album, setAlbum] = useState('');
     const [date, setDate] = useState('');

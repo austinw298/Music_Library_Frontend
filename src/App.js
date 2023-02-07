@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import axios from "axios";
 import DisplayMusic from "./Components/DisplayMusic/DisplayMusic";
 import AddSong from "./Components/AddSong/AddSong";
-
+import './App.css'
 
 function App() {
         const [songs, setSongs] = useState([]);
@@ -32,9 +32,12 @@ function App() {
     }
 
   return (
-    <div id = ''>
+    <div>
+      <div className="background">
         <DisplayMusic props={songs}/>
+
         <AddSong addNewSong={addNewEntry}/>
+      </div>
     </div>
   );
 }
