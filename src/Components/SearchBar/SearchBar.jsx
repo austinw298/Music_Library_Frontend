@@ -1,7 +1,7 @@
 const SearchBar = (props) => {
     return ( 
         <div>
-            <button> <object data="" type=""></object></button>
+            <button> </button>
         </div>
      );
 }
