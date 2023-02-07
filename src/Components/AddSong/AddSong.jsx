@@ -19,6 +19,7 @@ const AddSong = (props) => {
             genre: genre,
         };
         console.log(newEntry)
+        props.addNewSong(newEntry)
     }
     return ( 
         <form onSubmit={handleSubmit}>

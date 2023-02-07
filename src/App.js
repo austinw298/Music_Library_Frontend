@@ -24,12 +24,17 @@ function App() {
         makeGetRequest();
     }, [])
 
+    function addNewEntry(entry){
 
+      let tempEntries = [entry, ...songs];
+      
+      setSongs(tempEntries);
+    }
 
   return (
     <div id = ''>
         <DisplayMusic props={songs}/>
-        <AddSong />
+        <AddSong addNewSong={addNewEntry}/>
     </div>
   );
 }
