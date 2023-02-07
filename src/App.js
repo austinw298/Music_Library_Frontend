@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
 import DisplayMusic from "./Components/DisplayMusic/DisplayMusic";
+import AddSong from "./Components/AddSong/AddSong";
 
 
 function App() {
@@ -23,10 +24,12 @@ function App() {
         makeGetRequest();
     }, [])
 
+
+
   return (
     <div id = ''>
         <DisplayMusic props={songs}/>
-        {/*2.  Map through songs array using .map to display properties of each song using dot notation */}
+        <AddSong />
     </div>
   );
 }
